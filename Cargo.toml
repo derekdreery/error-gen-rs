@@ -1,0 +1,19 @@
+[package]
+name = "error-gen"
+version = "0.1.0"
+authors = ["Richard Dodd <richard.o.dodd@gmail.com>"]
+description = "Simple codegen for implementing `std::error::Error`"
+readme = "README.md"
+repository = "https://github.com/derekdreery/error-gen-rs"
+license = "Apache-2.0/MIT"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "0.4.28"
+syn = {version = "0.15.33", features = ["derive"]}
+quote = "0.6.12"
+heck = "0.3.1"
+
